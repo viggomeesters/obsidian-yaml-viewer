@@ -27,6 +27,12 @@ Current release target: `0.1.1`
 - [ ] Link the GitHub account that owns the repository.
 - [ ] Open **Plugins -> New plugin**.
 - [ ] Submit `https://github.com/viggomeesters/obsidian-yaml-viewer`.
+- [ ] Confirm developer policies and support commitment.
 - [ ] Address automated review feedback.
 
-Source used for this checklist: https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin
+These final steps require the repository owner's Obsidian account.
+
+Official references:
+
+- https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin
+- https://github.com/obsidianmd/obsidian-releases
