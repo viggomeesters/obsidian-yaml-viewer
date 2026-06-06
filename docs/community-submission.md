@@ -16,10 +16,10 @@ Current release target: `0.1.0`
 
 - [x] `npm run build` passes.
 - [x] `npx tsc --noEmit` passes.
-- [ ] GitHub release tag equals `manifest.json.version`.
-- [ ] Release assets include `main.js`.
-- [ ] Release assets include `manifest.json`.
-- [ ] Release assets include `styles.css`.
+- [x] GitHub release tag equals `manifest.json.version`.
+- [x] Release assets include `main.js`.
+- [x] Release assets include `manifest.json`.
+- [x] Release assets include `styles.css`.
 
 ## Directory Submission
 
