@@ -200,6 +200,20 @@
   margin: 2px 0 6px 17px;
 }
 
+.yaml-viewer__document-comments {
+  border-left: 2px solid var(--yaml-viewer-border);
+  color: var(--yaml-viewer-comment);
+  font-family: var(--yaml-viewer-code);
+  font-size: 0.86em;
+  line-height: 1.45;
+  margin: 2px 0 12px 6px;
+  padding-left: 12px;
+}
+
+.yaml-viewer__document-comment {
+  white-space: pre-wrap;
+}
+
 .yaml-viewer__hidden {
   display: none !important;
 }

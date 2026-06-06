@@ -168,6 +168,7 @@ class YamlViewerView extends TextFileView {
           });
           docHeader.dataset.path = rootPath;
         }
+        renderDocumentCommentBefore(tree, doc.commentBefore);
         outlineItems.push(...collectOutline(doc.contents, rootPath, documents.length > 1 ? `Document ${index + 1}` : "root", 0));
         renderNode(tree, doc.contents, rootPath, documents.length > 1 ? `Document ${index + 1}` : "root");
       });
@@ -313,6 +314,17 @@ function renderRaw(parent: HTMLElement, data: string): void {
 function renderComment(parent: HTMLElement, comment: string | null | undefined): void {
   if (!comment) return;
   parent.createDiv({ cls: "yaml-viewer__comment", text: `# ${comment.trim()}` });
+}
+
+function renderDocumentCommentBefore(parent: HTMLElement, comment: string | null | undefined): void {
+  if (!comment) return;
+  const block = parent.createDiv({ cls: "yaml-viewer__document-comments" });
+  comment.split("\n").forEach((line) => {
+    block.createDiv({
+      cls: "yaml-viewer__document-comment",
+      text: `#${line}`,
+    });
+  });
 }
 
 function createButton(parent: HTMLElement, icon: string, label: string): HTMLButtonElement {

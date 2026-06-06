@@ -1,7 +1,7 @@
 {
   "id": "yaml-viewer",
   "name": "YAML Viewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minAppVersion": "1.5.0",
   "description": "Browse .yaml and .yml files as a read-only tree with search, outline navigation, and syntax-highlighted source.",
   "author": "Viggo Meesters",
