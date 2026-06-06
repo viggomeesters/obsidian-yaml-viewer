@@ -1,0 +1,32 @@
+# Obsidian Community Submission Checklist
+
+Current release target: `0.1.0`
+
+## Repository
+
+- [x] Public GitHub repository exists.
+- [x] `README.md` describes what the plugin does and how to use it.
+- [x] `LICENSE` exists.
+- [x] `manifest.json` exists at repository root.
+- [x] `manifest.json.id` is unique and does not contain `obsidian`.
+- [x] `manifest.json.version` uses `x.y.z`.
+- [x] `versions.json` maps plugin version to minimum Obsidian version.
+
+## Release
+
+- [x] `npm run build` passes.
+- [x] `npx tsc --noEmit` passes.
+- [ ] GitHub release tag equals `manifest.json.version`.
+- [ ] Release assets include `main.js`.
+- [ ] Release assets include `manifest.json`.
+- [ ] Release assets include `styles.css`.
+
+## Directory Submission
+
+- [ ] Sign in to https://community.obsidian.md.
+- [ ] Link the GitHub account that owns the repository.
+- [ ] Open **Plugins -> New plugin**.
+- [ ] Submit `https://github.com/viggomeesters/obsidian-yaml-viewer`.
+- [ ] Address automated review feedback.
+
+Source used for this checklist: https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin

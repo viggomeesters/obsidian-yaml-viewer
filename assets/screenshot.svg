@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">YAML Viewer preview</title>
+  <desc id="desc">Read-only Obsidian YAML viewer showing a tree, search control, outline, and syntax-highlighted source.</desc>
+  <rect width="1280" height="760" fill="#1e1f1c"/>
+  <rect x="24" y="24" width="1232" height="712" rx="14" fill="#242620" stroke="#3d4038"/>
+  <text x="56" y="68" fill="#e6e1c8" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">life-os-schema.yaml</text>
+  <text x="56" y="96" fill="#8f8b76" font-family="Menlo, Consolas, monospace" font-size="14">system/contracts/life-os-schema.yaml</text>
+  <rect x="836" y="48" width="156" height="34" rx="7" fill="#1b1d18" stroke="#44483d"/>
+  <text x="872" y="70" fill="#8f8b76" font-family="Inter, Arial, sans-serif" font-size="15">Filter</text>
+  <rect x="1010" y="48" width="34" height="34" rx="7" fill="#1b1d18" stroke="#44483d"/>
+  <text x="1019" y="72" fill="#e6e1c8" font-family="Arial, sans-serif" font-size="19">↧</text>
+  <rect x="1052" y="48" width="34" height="34" rx="7" fill="#1b1d18" stroke="#44483d"/>
+  <text x="1061" y="72" fill="#e6e1c8" font-family="Arial, sans-serif" font-size="19">↥</text>
+  <rect x="1094" y="48" width="34" height="34" rx="7" fill="#1b1d18" stroke="#44483d"/>
+  <text x="1102" y="72" fill="#e6e1c8" font-family="Arial, sans-serif" font-size="18">⧉</text>
+  <line x1="48" y1="120" x2="1232" y2="120" stroke="#3d4038"/>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="17">
+    <line x1="74" y1="166" x2="74" y2="612" stroke="#3d4038"/>
+    <line x1="106" y1="214" x2="106" y2="566" stroke="#3d4038"/>
+    <line x1="138" y1="302" x2="138" y2="516" stroke="#3d4038"/>
+
+    <text x="58" y="157" fill="#ff4f9a">root</text>
+    <rect x="112" y="139" width="42" height="22" rx="4" fill="#363932"/>
+    <text x="122" y="156" fill="#39d98a" font-size="13">map</text>
+    <text x="166" y="156" fill="#8f8b76" font-size="14">6 keys</text>
+
+    <text x="90" y="205" fill="#ff4f9a">version</text>
+    <rect x="170" y="187" width="56" height="22" rx="4" fill="#363932"/>
+    <text x="181" y="204" fill="#8f8b76" font-size="13">string</text>
+    <text x="240" y="205" fill="#e6d85c">"9.4.0"</text>
+
+    <text x="90" y="249" fill="#ff4f9a">enums</text>
+    <rect x="154" y="231" width="42" height="22" rx="4" fill="#363932"/>
+    <text x="164" y="248" fill="#39d98a" font-size="13">map</text>
+    <text x="208" y="248" fill="#8f8b76" font-size="14">4 keys</text>
+
+    <text x="122" y="293" fill="#ff4f9a">area</text>
+    <rect x="176" y="275" width="40" height="22" rx="4" fill="#363932"/>
+    <text x="186" y="292" fill="#64b5f6" font-size="13">seq</text>
+    <text x="228" y="292" fill="#8f8b76" font-size="14">4 items</text>
+
+    <text x="154" y="337" fill="#ff4f9a">[0]</text>
+    <rect x="196" y="319" width="56" height="22" rx="4" fill="#363932"/>
+    <text x="207" y="336" fill="#8f8b76" font-size="13">string</text>
+    <text x="266" y="337" fill="#e6d85c">work</text>
+
+    <text x="154" y="381" fill="#ff4f9a">[1]</text>
+    <rect x="196" y="363" width="56" height="22" rx="4" fill="#363932"/>
+    <text x="207" y="380" fill="#8f8b76" font-size="13">string</text>
+    <text x="266" y="381" fill="#e6d85c">home</text>
+
+    <text x="122" y="433" fill="#ff4f9a">status</text>
+    <rect x="198" y="415" width="40" height="22" rx="4" fill="#363932"/>
+    <text x="208" y="432" fill="#64b5f6" font-size="13">seq</text>
+    <text x="250" y="432" fill="#8f8b76" font-size="14">6 items</text>
+
+    <text x="154" y="477" fill="#ff4f9a">value</text>
+    <rect x="216" y="459" width="56" height="22" rx="4" fill="#363932"/>
+    <text x="227" y="476" fill="#8f8b76" font-size="13">string</text>
+    <text x="286" y="477" fill="#e6d85c">"in progress"</text>
+
+    <text x="154" y="521" fill="#ff4f9a">active</text>
+    <rect x="226" y="503" width="64" height="22" rx="4" fill="#363932"/>
+    <text x="237" y="520" fill="#ffad4d" font-size="13">boolean</text>
+    <text x="304" y="521" fill="#ffad4d">true</text>
+
+    <text x="90" y="573" fill="#ff4f9a">types</text>
+    <rect x="152" y="555" width="42" height="22" rx="4" fill="#363932"/>
+    <text x="162" y="572" fill="#39d98a" font-size="13">map</text>
+    <text x="206" y="572" fill="#8f8b76" font-size="14">11 keys</text>
+  </g>
+
+  <line x1="950" y1="144" x2="950" y2="690" stroke="#3d4038"/>
+  <text x="974" y="158" fill="#8f8b76" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">OUTLINE</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="15">
+    <text x="974" y="202" fill="#e6e1c8">root</text>
+    <text x="1204" y="202" fill="#8f8b76">6</text>
+    <text x="996" y="238" fill="#e6e1c8">enums</text>
+    <text x="1204" y="238" fill="#8f8b76">4</text>
+    <text x="1018" y="274" fill="#8f8b76">area</text>
+    <text x="1204" y="274" fill="#8f8b76">4</text>
+    <text x="1018" y="310" fill="#8f8b76">status</text>
+    <text x="1204" y="310" fill="#8f8b76">6</text>
+    <text x="996" y="346" fill="#e6e1c8">types</text>
+    <text x="1204" y="346" fill="#8f8b76">11</text>
+    <text x="996" y="382" fill="#e6e1c8">validation</text>
+    <text x="1204" y="382" fill="#8f8b76">8</text>
+  </g>
+
+  <rect x="58" y="632" width="840" height="42" rx="7" fill="#1b1d18" stroke="#3d4038"/>
+  <text x="78" y="658" fill="#8f8b76" font-family="Inter, Arial, sans-serif" font-size="15">Raw YAML with line numbers and syntax highlighting</text>
+</svg>
