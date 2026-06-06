@@ -1,6 +1,6 @@
 # Obsidian Community Submission Checklist
 
-Current release target: `0.1.1`
+Current release target: `0.1.2`
 
 ## Repository
 
@@ -20,6 +20,7 @@ Current release target: `0.1.1`
 - [x] Release assets include `main.js`.
 - [x] Release assets include `manifest.json`.
 - [x] Release assets include `styles.css`.
+- [x] Release workflow creates GitHub artifact attestations for release assets.
 
 ## Directory Submission
 

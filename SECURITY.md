@@ -13,3 +13,5 @@ Do not include sensitive vault content in public issues. If a reproduction requi
 ## Security posture
 
 YAML Viewer is read-only. It reads YAML files through Obsidian's vault API and renders a local view. It does not send vault content to external services and does not write YAML back to disk.
+
+The plugin writes to the system clipboard only when the user explicitly clicks a copy button, such as **Copy raw YAML** or **Copy YAML path**. It does not read clipboard contents.

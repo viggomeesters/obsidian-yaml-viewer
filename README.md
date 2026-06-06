@@ -25,6 +25,10 @@ YAML Viewer is a read-only Obsidian plugin for browsing `.yaml` and `.yml` files
 - Shows raw YAML with lightweight syntax highlighting and line numbers.
 - Stays read-only by design: it never writes back to your YAML files.
 
+## Privacy and clipboard behavior
+
+YAML Viewer does not make network requests and does not send vault content to external services. It writes to the system clipboard only when you explicitly click a copy button, such as copying raw YAML or a YAML path. It does not read clipboard contents.
+
 ## Why read-only?
 
 YAML files often contain comments, anchors, ordering, and formatting that matter. A form editor can easily reserialize YAML and damage those details. YAML Viewer intentionally does not write to disk, so it cannot reformat or corrupt source-of-truth configuration files.
@@ -109,9 +113,10 @@ Steps:
 The current release is ready for review:
 
 - root `README.md`, `LICENSE`, and `manifest.json` exist
-- `manifest.json.version` is `0.1.1`
-- GitHub release `0.1.1` exists
+- `manifest.json.version` is `0.1.2`
+- GitHub release `0.1.2` exists
 - release assets include `main.js`, `manifest.json`, and `styles.css`
+- release assets have GitHub artifact attestations
 - `versions.json` maps supported Obsidian versions
 
 Official references:

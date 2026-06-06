@@ -2,6 +2,11 @@
 
 All notable changes to YAML Viewer are documented here.
 
+## 0.1.2 - 2026-06-06
+
+- Publish release assets through GitHub Actions with artifact attestations.
+- Document clipboard behavior for review transparency.
+
 ## 0.1.1 - 2026-06-06
 
 - Show leading document comments before the root YAML node in the tree view.
