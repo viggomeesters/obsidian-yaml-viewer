@@ -56,7 +56,6 @@ export default class YamlViewerPlugin extends Plugin {
       state: { file: file.path },
       active: true,
     });
-    this.app.workspace.revealLeaf(leaf);
   }
 }
 
@@ -125,9 +124,8 @@ class YamlViewerView extends TextFileView {
     const collapseButton = createButton(toolbar, "chevrons-up", "Collapse all");
     const rawButton = createButton(toolbar, "file-code-2", "Copy raw YAML");
 
-    rawButton.addEventListener("click", async () => {
-      await navigator.clipboard.writeText(this.data);
-      new Notice("YAML copied");
+    rawButton.addEventListener("click", () => {
+      void copyToClipboard(this.data, "YAML copied");
     });
 
     let documents: ReturnType<typeof parseAllDocuments> = [];
@@ -282,11 +280,10 @@ function renderScalar(
 function addCopyPathButton(parent: HTMLElement, path: string): void {
   const button = createButton(parent, "copy", "Copy YAML path");
   button.addClass("yaml-viewer__copy");
-  button.addEventListener("click", async (event) => {
+  button.addEventListener("click", (event) => {
     event.preventDefault();
     event.stopPropagation();
-    await navigator.clipboard.writeText(path);
-    new Notice(`Copied ${path}`);
+    void copyToClipboard(path, `Copied ${path}`);
   });
 }
 
@@ -334,6 +331,11 @@ function createButton(parent: HTMLElement, icon: string, label: string): HTMLBut
   });
   setIcon(button, icon);
   return button;
+}
+
+async function copyToClipboard(text: string, notice: string): Promise<void> {
+  await navigator.clipboard.writeText(text);
+  new Notice(notice);
 }
 
 function stringifyKey(key: unknown): string {
@@ -502,7 +504,7 @@ function findPathElement(tree: HTMLElement, path: string): HTMLElement | undefin
 function openAncestors(element: HTMLElement): void {
   let current: HTMLElement | null = element;
   while (current) {
-    if (current instanceof HTMLDetailsElement) current.open = true;
+    if (current.instanceOf(HTMLDetailsElement)) current.open = true;
     current = current.parentElement;
   }
 }
@@ -563,7 +565,9 @@ function tokenClass(value: string): string {
   if (/^(true|false)$/i.test(value)) return "yaml-viewer__tok-boolean";
   if (/^(null|~)$/i.test(value)) return "yaml-viewer__tok-null";
   if (/^-?\d+(\.\d+)?$/.test(value)) return "yaml-viewer__tok-number";
-  if (/^[\[{].*[\]}]$/.test(value)) return "yaml-viewer__tok-collection";
+  if ((value.startsWith("[") && value.endsWith("]")) || (value.startsWith("{") && value.endsWith("}"))) {
+    return "yaml-viewer__tok-collection";
+  }
   return "yaml-viewer__tok-string";
 }
 

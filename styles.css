@@ -214,8 +214,8 @@
   white-space: pre-wrap;
 }
 
-.yaml-viewer__hidden {
-  display: none !important;
+.yaml-viewer .yaml-viewer__hidden {
+  display: none;
 }
 
 .yaml-viewer__match {
