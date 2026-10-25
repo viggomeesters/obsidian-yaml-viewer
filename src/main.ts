@@ -227,7 +227,7 @@ function renderNode(parent: HTMLElement, node: unknown, path: string, label: str
     return;
   }
 
-  renderScalar(parent, label, String(node), path);
+  renderScalar(parent, label, formatValue(node), path);
 }
 
 function renderPair(parent: HTMLElement, pair: { key: unknown; value: unknown }, parentPath: string): void {
@@ -345,7 +345,7 @@ function stringifyKey(key: unknown): string {
   if (key === null || key === undefined) {
     return "null";
   }
-  return String(key);
+  return formatValue(key);
 }
 
 function valueType(value: unknown): string {

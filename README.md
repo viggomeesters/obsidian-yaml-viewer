@@ -37,11 +37,9 @@ YAML files often contain comments, anchors, ordering, and formatting that matter
 
 ### Community plugin directory
 
-YAML Viewer is ready for submission to the Obsidian Community plugin directory. Once accepted, it can be installed from **Settings -> Community plugins -> Browse** inside Obsidian.
+Install from the [Obsidian Community directory](https://community.obsidian.md/plugins/yaml-viewer) or search for YAML Viewer in Settings → Community plugins → Browse.
 
 ### Manual installation
-
-Until the community directory submission is accepted:
 
 1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/viggomeesters/obsidian-yaml-viewer/releases/latest).
 2. Create this folder in your vault: `.obsidian/plugins/yaml-viewer/`.
@@ -91,38 +89,9 @@ Obsidian installs community plugin files from GitHub releases. For each release:
 
 The release workflow in `.github/workflows/release.yml` can publish those assets after the version has been updated and committed.
 
-## Community directory submission
+## Community directory
 
-The repository is prepared for Obsidian Community plugin submission. The remaining submission step must be completed by the repository owner in the Obsidian Community site because it requires signing in, linking GitHub, and confirming the developer policies/support commitment.
-
-Submit this repository URL:
-
-```text
-https://github.com/viggomeesters/obsidian-yaml-viewer
-```
-
-Steps:
-
-1. Sign in to [community.obsidian.md](https://community.obsidian.md).
-2. Link the GitHub account that owns this repository.
-3. Open **Plugins -> New plugin**.
-4. Enter the repository URL above.
-5. Confirm the developer policies and submit.
-6. Address any automated review feedback.
-
-The current release is ready for review:
-
-- root `README.md`, `LICENSE`, and `manifest.json` exist
-- `manifest.json.version` is `0.1.2`
-- GitHub release `0.1.2` exists
-- release assets include `main.js`, `manifest.json`, and `styles.css`
-- release assets have GitHub artifact attestations
-- `versions.json` maps supported Obsidian versions
-
-Official references:
-
-- [Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin)
-- [Obsidian releases repository](https://github.com/obsidianmd/obsidian-releases)
+YAML Viewer is listed in the [Obsidian Community directory](https://community.obsidian.md/plugins/yaml-viewer).
 
 ## License
 
