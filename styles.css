@@ -1,4 +1,6 @@
 .yaml-viewer {
+  container-name: yaml-viewer;
+  container-type: inline-size;
   --yaml-viewer-border: var(--background-modifier-border);
   --yaml-viewer-muted: var(--text-muted);
   --yaml-viewer-code: var(--font-monospace);
@@ -406,6 +408,27 @@
   font-style: italic;
 }
 
+@container yaml-viewer (max-width: 860px) {
+  .yaml-viewer__header,
+  .yaml-viewer__toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .yaml-viewer__search input {
+    width: 100%;
+  }
+
+  .yaml-viewer__body {
+    grid-template-columns: 1fr;
+  }
+
+  .yaml-viewer__outline {
+    max-height: none;
+    order: -1;
+    position: static;
+  }
+}
 @media (max-width: 860px) {
   .yaml-viewer__header,
   .yaml-viewer__toolbar {
